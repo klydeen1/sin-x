@@ -40,8 +40,10 @@ class Sin_X_Calculator: ObservableObject {
         // var sinXminusOne = 0.0
         var sinX = 0.0
         
+        
         // If x is above pi, reduce it down until it is not (uses the periodicity of sin(x))
         var xInRange = x
+        /*
         if (xInRange > Double.pi) {
         
             repeat {
@@ -56,6 +58,7 @@ class Sin_X_Calculator: ObservableObject {
             } while xInRange < -Double.pi
         
         }
+         */
         
         
         let firstTerm = xInRange // Term where n = 1
@@ -87,7 +90,7 @@ class Sin_X_Calculator: ObservableObject {
             plotDataModel!.changingPlotParameters.xMax = 15.0
             plotDataModel!.changingPlotParameters.xMin = -1.0
             plotDataModel!.changingPlotParameters.xLabel = "n"
-            plotDataModel!.changingPlotParameters.yLabel = "Abs(log(Error))"
+            plotDataModel!.changingPlotParameters.yLabel = "log(abs(Error))"
             plotDataModel!.changingPlotParameters.lineColor = .red()
             plotDataModel!.changingPlotParameters.title = "Error sin(x) vs n"
                 
@@ -97,12 +100,12 @@ class Sin_X_Calculator: ObservableObject {
             
             if(actualsin_x != 0.0){
                 
-                var numerator = 1.0 - actualsin_x
+                var numerator = firstTerm - actualsin_x
                 
                 if(numerator == 0.0) {numerator = 1.0E-16}
                 
                 error = (log10(abs((numerator)/actualsin_x)))
-                
+                //error = (abs((numerator)/actualsin_x))
             }
             else {
                 error = 0.0
@@ -115,7 +118,7 @@ class Sin_X_Calculator: ObservableObject {
             
         }
         
-        // Calculate the infinite sum using the function that calculates the multiplier of the nth term in the series.
+        // Calculate the infinite sum using the function that calculates the nth term in the series.
         
         sinX = calculate1DFiniteSum(function: sinnthTerm, x: xInRange, minimum: 1, maximum: 100, firstTerm: firstTerm, isPlotError: plotError, errorType: sinErrorCalculator  )
         
@@ -180,7 +183,7 @@ class Sin_X_Calculator: ObservableObject {
             
             if !isPlotError{
                 
-                let dataPoint: plotDataType = [.X: Double(n), .Y: (sum + 1.0)]
+                let dataPoint: plotDataType = [.X: Double(n), .Y: (sum)]
                 plotData.append(contentsOf: [dataPoint])
             }
             else{
@@ -243,7 +246,7 @@ class Sin_X_Calculator: ObservableObject {
         var error = 0.0
         _ = Double(parameters[0].n)
         let x = parameters[0].x
-        let sum = parameters[0].sum + 1.0
+        let sum = parameters[0].sum
         
         let actualsin_x = sin(x)
         
