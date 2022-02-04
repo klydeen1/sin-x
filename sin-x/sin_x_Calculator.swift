@@ -58,7 +58,7 @@ class Sin_X_Calculator: ObservableObject {
             } while xInRange < -Double.pi
         
         }
-         */
+        */
         
         
         let firstTerm = xInRange // Term where n = 1
@@ -79,7 +79,7 @@ class Sin_X_Calculator: ObservableObject {
             plotDataModel!.changingPlotParameters.title = "sin(x) vs n"
             
             // Plot first point of sin
-            let dataPoint: plotDataType = [.X: 0.0, .Y: (1.0)]
+            let dataPoint: plotDataType = [.X: 0.0, .Y: (firstTerm)]
             plotDataModel!.appendData(dataPoint: [dataPoint])
         }
         else {
