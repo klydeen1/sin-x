@@ -43,7 +43,6 @@ class Sin_X_Calculator: ObservableObject {
         
         // If x is above pi, reduce it down until it is not (uses the periodicity of sin(x))
         var xInRange = x
-        /*
         if (xInRange > Double.pi) {
         
             repeat {
@@ -58,7 +57,6 @@ class Sin_X_Calculator: ObservableObject {
             } while xInRange < -Double.pi
         
         }
-        */
         
         
         let firstTerm = xInRange // Term where n = 1
