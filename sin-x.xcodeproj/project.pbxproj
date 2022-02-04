@@ -21,6 +21,7 @@
 		656CD7E727AC59590009DDE9 /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7E627AC59590009DDE9 /* CalculatePlotData.swift */; };
 		656CD7EA27AC5AEA0009DDE9 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 656CD7E927AC5AEA0009DDE9 /* CorePlot */; };
 		656CD7EC27AC5B500009DDE9 /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7EB27AC5B500009DDE9 /* operators.swift */; };
+		656CD7EE27ACFD0F0009DDE9 /* Discussion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 656CD7ED27ACFD0E0009DDE9 /* Discussion.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		656CD7E427AC59200009DDE9 /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
 		656CD7E627AC59590009DDE9 /* CalculatePlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePlotData.swift; sourceTree = "<group>"; };
 		656CD7EB27AC5B500009DDE9 /* operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
+		656CD7ED27ACFD0E0009DDE9 /* Discussion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Discussion.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				656CD7B327AC57BD0009DDE9 /* sin_xApp.swift */,
 				656CD7B527AC57BD0009DDE9 /* ContentView.swift */,
+				656CD7ED27ACFD0E0009DDE9 /* Discussion.txt */,
 				656CD7EB27AC5B500009DDE9 /* operators.swift */,
 				656CD7E427AC59200009DDE9 /* ChangingPlotParameters.swift */,
 				656CD7E627AC59590009DDE9 /* CalculatePlotData.swift */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656CD7BB27AC57BF0009DDE9 /* Preview Assets.xcassets in Resources */,
+				656CD7EE27ACFD0F0009DDE9 /* Discussion.txt in Resources */,
 				656CD7B827AC57BF0009DDE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -103,7 +103,6 @@ class Sin_X_Calculator: ObservableObject {
                 if(numerator == 0.0) {numerator = 1.0E-16}
                 
                 error = (log10(abs((numerator)/actualsin_x)))
-                //error = (abs((numerator)/actualsin_x))
             }
             else {
                 error = 0.0
@@ -168,7 +167,7 @@ class Sin_X_Calculator: ObservableObject {
         
             let parameters: [nthTermParameterTuple] = [(n: n, x: x)]
             
-            // Calculate the infinite sum using the function that calculates the multiplier of the nth them in the series from the (n-1)th term.
+            // Calculate the infinite sum using the function that calculates the nth them in the series
         
             currentTerm = function(parameters)
             
@@ -255,7 +254,6 @@ class Sin_X_Calculator: ObservableObject {
             if(numerator == 0.0) {numerator = sum.ulp}
             
             error = (log10(abs((numerator)/actualsin_x)))
-            
             
         }
         else {
