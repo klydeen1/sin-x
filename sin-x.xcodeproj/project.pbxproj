@@ -14,6 +14,13 @@
 		656CD7C627AC57C00009DDE9 /* sin_xTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7C527AC57C00009DDE9 /* sin_xTests.swift */; };
 		656CD7D027AC57C00009DDE9 /* sin_xUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7CF27AC57C00009DDE9 /* sin_xUITests.swift */; };
 		656CD7D227AC57C00009DDE9 /* sin_xUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7D127AC57C00009DDE9 /* sin_xUITestsLaunchTests.swift */; };
+		656CD7DF27AC582C0009DDE9 /* sin_x_Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7DE27AC582C0009DDE9 /* sin_x_Calculator.swift */; };
+		656CD7E127AC58730009DDE9 /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7E027AC58730009DDE9 /* PlotDataClass.swift */; };
+		656CD7E327AC58980009DDE9 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7E227AC58980009DDE9 /* CorePlot.swift */; };
+		656CD7E527AC59200009DDE9 /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7E427AC59200009DDE9 /* ChangingPlotParameters.swift */; };
+		656CD7E727AC59590009DDE9 /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7E627AC59590009DDE9 /* CalculatePlotData.swift */; };
+		656CD7EA27AC5AEA0009DDE9 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 656CD7E927AC5AEA0009DDE9 /* CorePlot */; };
+		656CD7EC27AC5B500009DDE9 /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD7EB27AC5B500009DDE9 /* operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,12 @@
 		656CD7CB27AC57C00009DDE9 /* sin-xUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sin-xUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		656CD7CF27AC57C00009DDE9 /* sin_xUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sin_xUITests.swift; sourceTree = "<group>"; };
 		656CD7D127AC57C00009DDE9 /* sin_xUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sin_xUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		656CD7DE27AC582C0009DDE9 /* sin_x_Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sin_x_Calculator.swift; sourceTree = "<group>"; };
+		656CD7E027AC58730009DDE9 /* PlotDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataClass.swift; sourceTree = "<group>"; };
+		656CD7E227AC58980009DDE9 /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
+		656CD7E427AC59200009DDE9 /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
+		656CD7E627AC59590009DDE9 /* CalculatePlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePlotData.swift; sourceTree = "<group>"; };
+		656CD7EB27AC5B500009DDE9 /* operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD7EA27AC5AEA0009DDE9 /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +111,12 @@
 			children = (
 				656CD7B327AC57BD0009DDE9 /* sin_xApp.swift */,
 				656CD7B527AC57BD0009DDE9 /* ContentView.swift */,
+				656CD7EB27AC5B500009DDE9 /* operators.swift */,
+				656CD7E427AC59200009DDE9 /* ChangingPlotParameters.swift */,
+				656CD7E627AC59590009DDE9 /* CalculatePlotData.swift */,
+				656CD7DE27AC582C0009DDE9 /* sin_x_Calculator.swift */,
+				656CD7E027AC58730009DDE9 /* PlotDataClass.swift */,
+				656CD7E227AC58980009DDE9 /* CorePlot.swift */,
 				656CD7B727AC57BF0009DDE9 /* Assets.xcassets */,
 				656CD7BC27AC57BF0009DDE9 /* sin_x.entitlements */,
 				656CD7B927AC57BF0009DDE9 /* Preview Content */,
@@ -145,6 +165,9 @@
 			dependencies = (
 			);
 			name = "sin-x";
+			packageProductDependencies = (
+				656CD7E927AC5AEA0009DDE9 /* CorePlot */,
+			);
 			productName = "sin-x";
 			productReference = 656CD7B027AC57BD0009DDE9 /* sin-x.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 656CD7A727AC57BD0009DDE9;
+			packageReferences = (
+				656CD7E827AC5AEA0009DDE9 /* XCRemoteSwiftPackageReference "core-plot" */,
+			);
 			productRefGroup = 656CD7B127AC57BD0009DDE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				656CD7B627AC57BD0009DDE9 /* ContentView.swift in Sources */,
+				656CD7EC27AC5B500009DDE9 /* operators.swift in Sources */,
+				656CD7E127AC58730009DDE9 /* PlotDataClass.swift in Sources */,
 				656CD7B427AC57BD0009DDE9 /* sin_xApp.swift in Sources */,
+				656CD7DF27AC582C0009DDE9 /* sin_x_Calculator.swift in Sources */,
+				656CD7E727AC59590009DDE9 /* CalculatePlotData.swift in Sources */,
+				656CD7E327AC58980009DDE9 /* CorePlot.swift in Sources */,
+				656CD7E527AC59200009DDE9 /* ChangingPlotParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		656CD7E827AC5AEA0009DDE9 /* XCRemoteSwiftPackageReference "core-plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/core-plot/core-plot";
+			requirement = {
+				branch = "release-2.4";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		656CD7E927AC5AEA0009DDE9 /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 656CD7E827AC5AEA0009DDE9 /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 656CD7A827AC57BD0009DDE9 /* Project object */;
 }
